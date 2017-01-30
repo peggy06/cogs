@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+		<link rel="icon" href="/favicon.ico" type="image">
+        <meta charset="utf-8">
+        <base href="<?php echo "http://" . $_SERVER["SERVER_NAME"] ?>">
+        <title>
+            <?php if(isset($page)): ?>
+                Primia - <?php echo $page; ?>
+            <?php else: ?>
+                Primia
+            <?php endif; ?>
+        </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!--Mobile Specific Metas-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--CSS-->
+		<link rel="stylesheet" href="assets/css/simplegrid.css">
+		<link rel="stylesheet" href="assets/css/layout.css">
+        <link rel="stylesheet" href="assets/css/size_tablet.css">
+        <link rel="stylesheet" href="assets/css/size_mobile.css">
+		<link rel="stylesheet" href="assets/set/font-awesome-4.0.3/css/font-awesome.min.css">
+        <?php if(isset($additional_css)): ?>
+            <?php echo '<link rel="stylesheet" href="' . $additional_css . '">'; ?>
+        <?php endif; ?>
+    </head>
+    <body>
+		<div class="container grid grid-pad">
+			<div id="header">
+				<div id="logo" class="col-1-1"><img src="assets/images/primia-logo.png"></div>
+				<div id="menu" class="col-1-1">
+					<ul>
+						<li><a href="" title="Home"><i class="fa fa-home fa-1x-xa"></i><br><span>Home</span></a></li>
+						<li><a href="work" title="Our Works"><i class="fa fa-briefcase fa-1x-xa"></i><br><span>Our Works</span></a></li>
+						<li><a href="blog" title="Blogs"><i class="fa fa-comments fa-1x-xa"></i><br><span>Blogs</span></a></li>
+						<li><a href="about" title="About Us"><i class="fa fa-group fa-1x-xa"></i><br><span>About Us</span></a></li>
+						<li><a href="contact" title="Contact Us"><i class="fa fa-phone fa-1x-xa"></i><br><span>Contact Us</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="content">
+		            <?php echo $__env->yieldContent('content'); ?>
+			</div>
+			<div id="footer">
+				<div class="grid grid-pad"></div>
+				<div id="navigations" class="grid grid-pad hr-line-thick-top">
+					<div class="menus col-1-2">
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="work">Our Works</a></li>
+                            <li><a href="blog">Blogs</a></li>
+							<li><a href="about">About Us</a></li>
+							<li><a href="contact">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="links col-1-2">
+						<ul>
+							<li class="dribbble"><a href=""><i class="fa fa-dribbble fa-2x"></i></a></li>
+							<li class="facebook"><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+							<li class="twitter"><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="permalinks" class="grid grid-pad hr-line-thick-top">
+					<div id="copyright" class="col-1-1">Copyright 2014 @ <a href="">www.primia.com</a></div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

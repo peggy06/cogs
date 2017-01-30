@@ -1,0 +1,66 @@
+<?php $__env->startSection('content'); ?>
+<div style="">
+    <div class="row">
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="/assets/images/default/profile.png" 
+         alt="Generic placeholder thumbnail">
+      </a>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+          <img src="/assets/images/default/profile.png" 
+         alt="Generic placeholder thumbnail">
+      </a>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+          <img src="/assets/images/default/profile.png" 
+         alt="Generic placeholder thumbnail">
+      </a>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+          <img src="/assets/images/default/profile.png" 
+         alt="Generic placeholder thumbnail">
+      </a>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+          <img src="/assets/images/default/profile.png" 
+         alt="Generic placeholder thumbnail">
+      </a>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+          <img src="/assets/images/default/profile.png" 
+         alt="Generic placeholder thumbnail">
+      </a>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+            <img src="/assets/images/default/profile.png" 
+         alt="Generic placeholder thumbnail">
+      </a>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+          <img src="/assets/images/default/profile.png" 
+         alt="Generic placeholder thumbnail">
+      </a>
+   </div>
+  <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+            <img src="/assets/images/default/profile.png" 
+         alt="Generic placeholder thumbnail">
+      </a>
+   </div>
+
+
+
+
+
+</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

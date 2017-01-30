@@ -1,0 +1,60 @@
+<?php $__env->startSection('content'); ?>
+<div id="tag" class="col-1-1">
+	<div id="left-tag" class="col-6-12">
+		<div class="line  mobile-full">
+			<p class="title shadow"><h1 class="font-red">Send us a message</h1></p>
+			<p class="statement">Fill up your contact details so we can answer your questions.</p>
+			<form action="" method="post">
+				<div class="field col-1-1">
+					<label class="font-blue text-shadow" for="i_name">Name</label><br>
+					<input type="text" id="i_name" class="border-blue"/><br>
+				</div>
+				<div class="field col-1-1">
+					<label class="font-blue text-shadow" for="i_email">Email</label><br>
+					<input type="text" id="i_email" class="border-blue"/><br>
+				</div>
+				<div class="field col-1-1">
+					<label class="font-blue text-shadow" for="i_subject">Subject</label><br>
+					<input type="text" id="i_subject" class="border-blue"/><br>
+				</div>
+				<div class="field col-1-1">
+					<label class="font-blue text-shadow" for="i_message">Message</label><br>
+					<textarea id="i_message" class="border-blue"></textarea><br>
+				</div>
+				<div class="field col-1-1">
+					<button class="background-blue" type="submit">Send Message</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="right-tag" class="col-6-12">
+		<div class="line col-1-1">
+			<div class="center-line col-1-1"><img class="image box-shadow" src="assets/images/ct.jpg"></div>
+			<p class="title font-blue text-shadow">CONTACT INFORMATION</p>
+			<ul class="list">
+				<li>
+				 	<i class="fa fa-envelope font-blue text-shadow"></i>
+					hello@primia.ph
+				</li>
+				<li>
+				 	<i class="fa fa-phone font-blue text-shadow"></i>
+					+63 (2) 7327389
+				</li>
+				<li>
+				 	<i class="fa fa-mobile font-blue text-shadow"></i>
+					+63 (922) 7327389
+				</li>
+			</ul>
+			<p class="title font-blue shadow">WORKING HOURS</p>
+			<ul class="list">
+				<li>
+				 	<i class="fa fa-clock-o font-blue text-shadow"></i>
+					Anytime we are free
+					<i class="fa fa-smile-o font-yellow text-shadow"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

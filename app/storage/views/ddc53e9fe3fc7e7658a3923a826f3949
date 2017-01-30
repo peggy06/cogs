@@ -1,0 +1,82 @@
+<?php $__env->startSection('content'); ?>
+				<div id="tag" class="col-12-12">
+					<div id="left-tag" class="col-6-12">
+						<div class="line">
+							<p class="title font-blue">We build fresh websites and amazing community solutions.</p>
+							<p class="statement">Primia at your service! Based on the modern open source framework Drupal we bring your brand to the online world. With competence, confidence and a dash of spice!</p>
+						</div>
+						<div class="line">
+							<p class="title font-blue">We build fresh websites and amazing community solutions.</p>
+							<p class="statement">Primia at your service! Based on the modern open source framework Drupal we bring your brand to the online world. With competence, confidence and a dash of spice!</p>
+						</div>
+						<div class="line">
+							<p class="title font-blue">We build fresh websites and amazing community solutions.</p>
+							<p class="statement">Primia at your service! Based on the modern open source framework Drupal we bring your brand to the online world. With competence, confidence and a dash of spice!</p>
+						</div>
+					</div>
+					<div id="right-tag" class="col-6-12">
+						<div class="line">
+							<p class="icon">
+								<i class="fa fa-lightbulb-o fa-5x-x5"></i><br>
+								<a href=""><i class="fa fa-arrow-circle-right fa-5x-x1 font-yellow contact"></i></a>
+							</p>
+						</div>
+					</div>
+					<div id="center-tag" class="col-12-12">
+						<div class="line col-12-12">
+							<div class="left-line col-5-12">
+								<span class="ellipsis-h">
+									<i class="fa fa-ellipsis-h fa-5x-x1 font-white"></i>
+									<i class="fa fa-ellipsis-h fa-5x-x1 font-white"></i>
+								</span>
+								<a href=""><i class="fa fa-home fa-5x-x2 margin image"></i></a><br>
+							</div>
+							<div class="right-line col-7-12">
+								<p class="title font-blue">Community Solutions</p>
+								<p class="statement">We are specialized in developing and running community platforms. Whether you want to engage the world or connect your staff online, we’ll build the right solution.
+									<a href="">
+										<span class="view background-blue">Learn More</span>
+									</a>
+								</p>
+							</div>
+						</div>
+						<div class="line col-12-12">
+							<div class="left-line col-5-12">
+								<span class="ellipsis-h">
+									<i class="fa fa-ellipsis-h fa-5x-x1 font-white"></i>
+									<i class="fa fa-ellipsis-h fa-5x-x1 font-white"></i>
+								</span>
+								<a href=""><i class="fa fa-gear fa-5x-x2 margin image"></i></a><br>
+							</div>
+							<div class="right-line col-7-12">
+								<p class="title font-red">Web Development</p>
+								<p class="statement">
+									We will be at your side through all stages of the web design and development process. Our product range comprises Social Media applications, websites, campaigning tools, webshops - you name it!
+									<a href="">
+										<span class="view background-red">Learn More</span>
+									</a>
+								</p>
+							</div>
+						</div>
+						<div class="line col-12-12">
+							<div class="left-line col-5-12">
+								<span class="ellipsis-h">
+									<i class="fa fa-ellipsis-h fa-5x-x1 font-white"></i>
+									<i class="fa fa-ellipsis-h fa-5x-x1 font-white"></i>
+								</span>
+								<a href=""><i class="fa fa-male fa-5x-x2 margin image"></i></a>
+							</div>
+							<div class="right-line col-7-12">
+								<p class="title font-yellow">Web Consulting</p>
+								<p class="statement">
+									Over time, we’ve learned a lot working with clients and our own products. Naturally, we’d like to share our knowledge with you. It’s our know-how that makes things work.
+									<a href="">
+										<span class="view background-yellow">Learn More</span>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

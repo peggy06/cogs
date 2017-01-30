@@ -1,0 +1,52 @@
+<?php $__env->startSection('content'); ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading"><?php echo $page; ?></div>
+                <div class="panel-body">
+                
+                    <?php echo $form_on; ?>
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                            
+                                <?php echo $user_name; ?>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                            
+                                <?php echo $user_pass; ?>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-1 col-md-offset-9">
+                            
+                                <?php echo $user_send; ?>
+                                
+                                <?php echo $user_hide; ?>
+                                
+                            </div>
+                        </div>
+                        
+                    <?php echo $form_off; ?>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('backend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

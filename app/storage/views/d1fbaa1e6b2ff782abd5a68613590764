@@ -1,0 +1,10 @@
+<?php $__env->startSection('content'); ?>
+
+                                        <div class="well" id="well">
+                                            <div class="panel-body">
+                                                <p class="lead">Welcome <?php echo ucfirst($_SESSION['admin_lname']).', '.ucfirst($_SESSION['admin_fname']).' '.ucfirst($_SESSION['admin_lname']).' A.K.A. " '.$_SESSION['admin_name'].' "'; ?></p>
+                                            </div>
+                                        </div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

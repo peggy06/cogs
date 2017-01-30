@@ -1,0 +1,192 @@
+<?php $__env->startSection('content'); ?>
+
+                                        <div class="resume">
+                                            <header class="page-header">
+                                            
+                                                <?php foreach($_user as $user): ?>
+                                            
+                                                <h1 class="page-title"><?php echo ucfirst($user->user_fname).' '.ucfirst($user->user_lname); ?></h1>
+                                            
+                                            
+                                                <?php endforeach; ?>
+                                            </header>
+                                            <!--unclosed-->
+                                            <div class="row">
+                                                <div class="col-xs-0 col-sm-0 col-md-offset-0">
+                                                    <div class="panel panel-default">
+                                                        <div class="bs-callout-danger">
+                                                            <a class="link" href="/profile/edit/personal"><b>Personal</b></a>
+                                                            |
+                                                            <a class="link" href="/profile/edit/education"><b>Education</b></a>
+                                                            |
+                                                            <a class="link" href="/profile/edit/work"><b>Work</b></a>
+                                                            |
+                                                            <a class="link" href="/profile/edit/achievements"><b>Achievements</b></a>
+                                                            |
+                                                            <a class="link" href="/profile/edit/skills"><b>Skills</b></a>
+                                                        </div>
+                                                        
+                                                        <?php echo $form_on; ?>
+                                                       
+                                                    <?php if($tab=='personal'): ?>
+                                                        
+                                                        <div class="bs-callout bs-callout-danger">
+                                                            <h4>PERSONAL INFORMATION</h4>
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <br>
+                                                                    <br>
+                                                                    <div class="col-xs-12 col-sm-12">
+                                                                        <ul class="list-group">
+                                                                            <li class="list-group-item">
+                                                                                <b>First Name</b><?php echo $user_fname; ?><br>
+                                                                                <b>Middle Name</b><?php echo $user_mname; ?><br>
+                                                                                <b>Last Name</b><?php echo $user_lname; ?><br>
+                                                                            </li>
+                                                                            <li class="list-group-item">
+                                                                                <b>Phone</b><input name="user_number" class="form-control input-sm" type="number" placeholder="00-0000-0000" value="<?php foreach($_user_number as $user_number): echo $user_number->contact_content; endforeach; ?>" required="required"><br>
+                                                                                <b>Email</b><?php echo $user_email; ?><br>
+                                                                            </li>
+                                                                            <li class="list-group-item">
+                                                                                <b>Gender</b>
+                                                                                <select name="user_gender" class="form-control input-sm"><option value="1">Male</option><option value="0">Female</option></select><br>
+                                                                                <b>Birth Date</b>
+                                                                                <input name="user_bday" class="form-control input-sm" type="date" placeholder="(yyyy/mm/dd)" value="<?php foreach($_user as $user): echo date('Y/m/d',$user->user_bday); endforeach; ?>" required="required"><br>
+                                                                                <b>Birth Place</b>
+                                                                                <?php echo $user_bplace; ?><br>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    <?php elseif($tab=='education'): ?>
+                                                        
+                                                        <div class="bs-callout bs-callout-danger">
+                                                            <div>
+                                                                <h4>EDUCATIONAL BACKGROUND</h4>
+                                                                <table class="table table-striped table-responsive ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Degree</th>
+                                                                            <th>School Year</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        
+                                                                <?php foreach($_user_edu as $user_edu): ?>
+                                                        
+                                                                    <tr>
+                                                                        <td><?php echo ucwords($user_edu->edu_title); ?></td>
+                                                                        <td><?php echo date('Y',$user_edu->edu_date_start).'-'.date('Y',$user_edu->edu_date_end); ?></td>
+                                                                    </tr>
+                                                                        
+                                                                <?php endforeach; ?>
+                                                                        
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <hr>
+                                                            <div>
+                                                                Add new record by flling up the form below.<br><br>
+                                                            </div>
+                                                            <div>
+                                                                <b>Title</b><?php echo $edu_title; ?><br>
+                                                                <b>Address</b><?php echo $edu_address; ?><br>
+                                                                <b>Start Date</b>
+                                                                <input name="edu_date_start" class="form-control input-sm" type="date" placeholder="(yyyy/mm/dd)" required="required"><br>
+                                                                <b>End Date</b>
+                                                                <input name="edu_date_end" class="form-control input-sm" type="date" placeholder="(yyyy/mm/dd)" required="required"><br>
+                                                                <b>Category</b>
+                                                                <select name="edu_category" class="form-control input-sm">
+                                                                
+                                                                <?php foreach($_user_edu_category as $user_edu_category): ?>
+                                                                
+                                                                    <option value="<?php echo $user_edu_category->category_id; ?>"><?php echo ucfirst($user_edu_category->category_name); ?></option>
+                                                                    
+                                                                <?php endforeach; ?>
+                                                                    
+                                                                </select>
+                                                                <br>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    <?php elseif($tab=='work'): ?>
+                                                        
+                                                        <div class="bs-callout bs-callout-danger">
+                                                            <h4>WORK EXPERIENCES</h4>
+                                                            <!--ul class="list-group">
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Company Name:</b> IBM </li>
+                                                                    <li> <b>Position:</b> Jurior Programmer</li>
+                                                                    <li> <b>Date:</b> 2005</li>
+                                                                </a>
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Company Name:</b> IBM </li>
+                                                                    <li> <b>Position:</b> Jurior Programmer</li>
+                                                                    <li> <b>Date:</b> 2005</li>
+                                                                </a>
+                                                            </ul-->
+                                                            WORK IN PROGRESS!
+                                                        </div>
+                                                        
+                                                    <?php elseif($tab=='achievements'): ?>
+                                                        
+                                                        <div class="bs-callout bs-callout-danger">
+                                                            <h4>ACHIEVEMENTS</h4>
+                                                            <!--ul class="list-group">
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Nature:</b> SQL Server </li>
+                                                                    <li> <b>Sponsor:</b> Microsoft Community</li>
+                                                                    <li> <b>Venue:</b> Microsoft Baguio</li>
+                                                                    <li> <b>Date:</b> 2006</li>
+                                                                </a> 
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Company Name:</b> IBM </li>
+                                                                    <li> <b>Position:</b> Jurior Programmer</li>
+                                                                    <li> <b>Date:</b> 2005</li>
+                                                                </a>
+                                                            </ul-->
+                                                            WORK IN PROGRESS!
+                                                        </div>
+                                                        
+                                                    <?php elseif($tab=='skills'): ?>
+                                                        
+                                                        <div class="bs-callout bs-callout-danger">
+                                                            <h4>SKILLS</h4>
+                                                            <!--ul class="list-group">
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Nature:</b> SQL Server </li>
+                                                                    <li> <b>Sponsor:</b> Microsoft Community</li>
+                                                                    <li> <b>Venue:</b> Microsoft Baguio</li>
+                                                                    <li> <b>Date:</b> 2006</li>
+                                                                </a> 
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Company Name:</b> IBM </li>
+                                                                    <li> <b>Position:</b> Jurior Programmer</li>
+                                                                    <li> <b>Date:</b> 2005</li>
+                                                                </a>
+                                                            </ul-->
+                                                            WORK IN PROGRESS!
+                                                        </div>
+                                                        
+                                                    <?php endif; ?>
+                                                        
+                                                        <div class="bs-callout bs-callout-danger">
+                                                        
+                                                        <?php echo $user_save; ?>
+                                                        
+                                                        <?php echo $user_hide; ?>
+                                                        
+                                                        </div> 
+                                                        
+                                                        <?php echo $form_off; ?>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

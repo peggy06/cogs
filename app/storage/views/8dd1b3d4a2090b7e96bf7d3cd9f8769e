@@ -1,0 +1,46 @@
+<?php $__env->startSection('content'); ?>
+
+<div class="login-page">
+<h1>Order Verified!</h1>
+<div class="login-page">
+		<div class="container">
+			<div class="check-out">
+				<h4 class="title">Order has succesfully register!</h4>
+				<p class="cart">We've got a surprise for you - your order has been registered. We're currently working on shipping - Shipping will be 4-5 business days. And for us to ship your products we need to get your address.</p>
+				<form id="demo-form2" action="/updateUserAddr" method="post" class="form-horizontal form-label-left input_mask"" enctype="multipart/form-data">
+							<div class="form-group">
+								<label class="control-label col-md-3 col-sm-3 col-xs-12" for="paint-img">
+									Proof of Billing: <span class="required">*</span>
+								</label>
+								<div class="col-md-6 col-sm-6 col-xs-12">
+										<input type="file" name="fileToUpload" id="fileToUpload" required="required" class=" col-md-7 col-xs-12">
+									
+								</div>
+							</div>
+							<div class="form-group">
+						  		<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+						  			<button type="submit" class="btn btn-success">Submit</button>
+						  		</div>
+						  	</div>
+				</form>
+				<p>
+					<b>NOTE:</b> It can be a captured image or scan documents<br />
+					<span class="text-danger"><b>WARNING:</b> Falsification of documents or any types of cheating dealing with this form will lead you to disposal of order and permanent ban to the website. Thank You!</span>
+				</p>
+				
+				<div class="clearfix"> </div>
+				
+		   </div>
+		 </div>
+
+
+			<?php if(isset($error))
+					{
+						echo $error;
+					}
+			
+			?>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

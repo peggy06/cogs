@@ -1,0 +1,8 @@
+<?php $__env->startSection('content'); ?>
+<section>
+<div class="index_sectionPosition">
+	<h5><a href="edit-about" ><span class="glyphicon glyphicon-edit"></span> Edit</a></h5>
+</div>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('backend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,83 @@
+<?php $__env->startSection('content'); ?>
+<div id="tag" class="col-1-1">
+	<div id="center-tag" class="col-1-1">
+		<!--line start-->
+		<div class="line col-1-1">
+			<div class="center-line col-1-1"><p class="title text-shadow"><h1 class="font-red">NEGODEALS</h1></p></div>
+			<div class="left-line col-1-2">
+				<p class="title font-blue text-shadow">Our Contributions:</p>
+				<ul class="list">
+					<li><i class="fa fa-check font-blue"></i>Web design</li>
+					<li><i class="fa fa-check font-blue"></i>Development of a fully responsive website</li>
+					<li><i class="fa fa-check font-blue"></i>Development of an interactive second screen solution</li>
+					<li><i class="fa fa-check font-blue"></i>Hosting & support</li>
+				</ul>
+				<p class="statement">
+					<a class="f-left" href="http://negodeals.com/" target="_blank">
+	                	<span class="view background-blue">View Website</span>
+	                </a>
+				</p>
+				<br />
+			</div>
+			<div class="right-line col-1-2">
+				<div class="case">
+					<div class="menu">
+						<ul>
+							<li>
+								<a class="f-left" href="http://negodeals.com/" target="_blank" title="View Website">
+				                	<span class="view background-blue"><i class="fa fa-external-link-square fa-2x font-white"></i></span>
+				                </a>
+							</li>
+							<li>
+								<a class="f-left" href="assets/images/printscreens/thumb_001.jpg" title="View Printscreen">
+				                	<span class="view background-blue"><i class="fa fa-picture-o fa-2x font-white"></i></span>
+				                </a>
+							</li>
+						</ul>
+					</div>
+					<img class="image box-shadow" src="assets/images/printscreens/thumb_001.jpg">
+				</div>
+			</div>
+		</div>
+		<!--line start-->
+		<div class="line col-1-1 hr-line-thin">
+			<div class="center-line col-1-1"><p class="title font-red text-shadow"><h1 class="font-red">1GOAL</h1></p></div>
+			<div class="left-line col-1-2">
+				<div class="case">
+					<div class="menu">
+						<ul>
+							<li>
+								<a class="f-left" href="http://1goal-team.com/" target="_blank" title="View Website">
+				                	<span class="view background-blue"><i class="fa fa-external-link-square fa-2x font-white"></i></span>
+				                </a>
+							</li>
+							<li>
+								<a class="f-left" href="assets/images/printscreens/thumb_002.jpg" title="View Printscreen">
+				                	<span class="view background-blue"><i class="fa fa-picture-o fa-2x font-white"></i></span>
+				                </a>
+							</li>
+						</ul>
+					</div>
+					<img class="image box-shadow" src="assets/images/printscreens/thumb_002.jpg">
+				</div>
+			</div>
+			<div class="right-line col-1-2">
+				<p class="title font-blue text-shadow">Our Contributions:</p>
+				<ul class="list">
+					<li><i class="fa fa-check font-blue"></i>Consultation & concept</li>
+					<li><i class="fa fa-check font-blue"></i>Development of a fully responsive platform</li>
+					<li><i class="fa fa-check font-blue"></i>Migration</li>
+					<li><i class="fa fa-check font-blue"></i>Hosting & support</li>
+				</ul>
+				<p class="statement">
+					<a class="f-left" href="http://1goal-team.com/" target="_blank">
+	                	<span class="view background-blue">View Website</span>
+	                </a>
+				</p>
+				<br />
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

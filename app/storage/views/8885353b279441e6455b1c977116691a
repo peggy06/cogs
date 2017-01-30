@@ -1,0 +1,72 @@
+<?php $__env->startSection('content'); ?> 
+
+				<div class="panel panel-default">
+                    
+                <?php if($add==2): ?>
+                    
+                    
+                    
+                        
+                    
+                <?php else: ?>
+                
+                    <div class="panel-heading"><?php echo $page; ?></div>
+                        <div class="panel-body">
+                        
+                            <?php echo $form_on; ?>
+
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label>Event Title</label><br>
+                                        
+                                        <?php echo $event_title; ?>
+                                        
+                                        <br>
+                                        <br>
+                                        <label>Event Content</label><br>
+                                        
+                                        <?php echo $event_content; ?>
+                                        
+                                        <br>
+                                        <br>
+                                        
+                                        <label>Event Date Start</label><br>
+                                        
+                                        <?php echo $event_date_start; ?>
+                                        
+                                        <br>
+                                        <br>
+                                	
+                                        <label>Event Date End</label><br>
+                                        
+                                        <?php echo $event_date_ended; ?>
+                                        
+                                        <br>
+                                        <br>
+                                        
+
+                                	</div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <div class="col-md-1">
+                                    
+                                        <?php echo $event_save; ?>
+                                        
+                                        <?php echo $event_hide; ?>
+                                        
+                                    </div>
+                                </div>
+                                
+                            <?php echo $form_off; ?>
+                    
+                        </div>
+                
+                <?php endif; ?>
+                    
+                    </div>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('backend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

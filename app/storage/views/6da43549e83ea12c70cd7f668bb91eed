@@ -1,0 +1,79 @@
+<?php $__env->startSection('content'); ?>
+<div id="tag" class="col-1-1">
+	<div id="left-tag" class="col-9-12">
+		<?php for($x=1;$x<=$count;$x++) : ?>
+		<div class="line col-1-1">
+			<div class="center-line col-1-1 mobile-full">
+				<p class="title">
+					<span class="font-red text-shadow">Lorem ipsum</span>
+					<br />
+					<span class="subtitle text-shadow">
+						written by <span class="font-blue">angeldrb</span> on <span class="font-blue">May 25, 2013</span> with <span class="font-blue">6 comments</span>
+					</span>
+				</p>
+				<p class="blog paragraph">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+				</p>
+				<p class="statement p-bottom">
+					<a class="f-right" href="/blog/post#post">
+	                	<span class="view background-red">Read More</span>
+	                </a>
+				</p>
+			</div>
+		</div>
+		<!--line-->
+		<?php endfor ?>
+		<div class="line col-1-1"><div class="left-line col-9-12"></div><div class="right-line col-3-12"></div></div>
+		<!--line-->
+	</div>
+	<div id="left-tag" class=" col-3-12">
+		<div class="line col-1-1">
+			<div class="center-line col-1-1">
+				<p class="title font-red text-shadow">Tags</p>
+				<a href=""><span class="view background-blue font-white">PHP</span></a>
+				<a href=""><span class="view background-blue font-white">JQUERY</span></a>
+				<a href=""><span class="view background-blue font-white">JQUERY-UI</span></a>
+				<a href=""><span class="view background-blue font-white">LINUX</span></a>
+				<a href=""><span class="view background-blue font-white">MYSQL</span></a>
+				<a href=""><span class="view background-blue font-white">POSTGRESQL</span></a>
+				<a href=""><span class="view background-blue font-white">DEBIAN</span></a>
+				<a href=""><span class="view background-blue font-white">SYTEMD</span></a>
+				<a href=""><span class="view background-blue font-white">HOW-TO</span></a>
+				<a href=""><span class="view background-blue font-white">TUTORIAL</span></a>
+				<a href=""><span class="view background-blue font-white">OPEN SOURCE</span></a>
+				<a href=""><span class="view background-blue font-white">GIT</span></a>
+				<a href=""><span class="view background-blue font-white">GIT HUB</span></a>
+				<a href=""><span class="view background-blue font-white">GOOGLE</span></a>
+				<a href=""><span class="view background-blue font-white">CSS</span></a>
+				<a href=""><span class="view background-blue font-white">SYSADMIN</span></a>
+				<a href=""><span class="view background-blue font-white">SECURITY</span></a>
+				<a href=""><span class="view background-blue font-white">MEMCACHED</span></a>
+				<a href=""><span class="view background-blue font-white">SOCIAL MEDIA</span></a>
+				<a href=""><span class="view background-blue font-white">FACEBOOK</span></a>
+				<a href=""><span class="view background-blue font-white">TWITTER</span></a>
+				<a href=""><span class="view background-blue font-white">LINKEDIN</span></a>
+				<a href=""><span class="view background-blue font-white">GOOGLE PLUS</span></a>
+				<a href=""><span class="view background-blue font-white">SEO</span></a>
+				<a href=""><span class="view background-blue font-white">VIDEO</span></a>
+			</div>
+		</div>
+	</div>
+	<div id="center-tag" class="col-1-1">
+		<div class="line col-1-1">
+			<div class="left-line col-9-12 hr-line-thin-top">
+				<p class="statement align-center">
+					<a href="/blog#tag"><span class="view background-red"><i class="fa fa-arrow-left fa-1x"></i></span></a>
+					<?php for($x=1;$x<=$count;$x++) : ?>
+					<a class="m-hide" href="/blog#tag"><span class="view background-blue"><?php echo $x; ?></span></a>
+					<?php endfor ?>
+					<a href="/blog#tag"><span class="view background-red"><i class="fa fa-arrow-right fa-1x"></i></span></a>
+				</p>
+			</div>
+			<div class="right-line col-3-12 p-left"></div>
+		</div>
+		<!--line-->
+		<div class="line col-1-1"><div class="left-line col-9-12"></div><div class="right-line col-3-12"></div></div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

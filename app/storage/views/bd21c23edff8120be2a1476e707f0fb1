@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<?php $pass=explode('/',base64_decode($user_pass)); ?>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normalize CSS: UI tests</title>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="normalize.css">
+<style type="text/css">
+    @media only screen and (max-width: 480px){
+        .flexibleImage{
+            max-width:520px !important;
+            width 100% !important;
+        }
+    }
+</style>
+
+    <body>
+ 
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background: #5B4182;">
+    <tr>
+        <td align="center" valign="top" style="padding-top:10px; padding-right:20px; padding-left:10px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+               
+                <tr>
+                    <td style="color:#ffffff; font-family:Arial; font-size:20px;  text-align:left; ">
+                         <a href="#" style="display:block;
+                              padding-top: 6px;
+                              padding-bottom: 6px;
+                              background-color:#4a336c;
+                              color:#ffffff;
+                              height:33px;
+                              width:250px;
+                              font-size:30px;
+                              font-weight:700;
+                              text-align:center;
+                              text-decoration:none;
+                              text-shadow:0 0 1px;
+                              border-radius:4px;">BSU-Sarmiento</a>
+                        <h3>Bulacan State University Sarmiento Campus</h3>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background: #F2AB05;">
+    <tr>
+        <td align="center" valign="top" style="padding-top:0px; padding-right:20px; padding-left:20px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+               
+                <tr>
+                    <td valign="top" style="color:#ffffff; font-family:Arial; font-size:16px;  text-align:left; padding-bottom:40px; ">
+                        <h3>Hello! <?php echo ucfirst($user_fname).' '.ucfirst($user_lname); ?></h3>
+                        </p>
+                        <H5>Thank you! for registering on our website! your email given is "<?php echo $user_email; ?>" and your password provide is "<?php echo $pass[0]; ?>" you may now access the website by clicking proceed button, again thank you!</H5>
+                        </br>
+                        
+                              <a href="<?php echo $page; ?>" style="display:block;
+                              padding-top: 6px;
+                              padding-bottom: 6px;
+                              background-color:#f6de11;
+                              color:#0e385f;
+                              height:15px;
+                              width:140px;
+                              font-size:14px;
+                              font-weight:700;
+                              text-align:center;
+                              text-decoration:none;
+                              text-shadow:0 0 1px;
+                              border-radius:4px;">Proceed Now.</a>
+
+                        <H5>Objective</H5>
+                        <p>
+                             <H5>The objective of this site is trace the graduates of Bulacan State University Sarmiento Campus with course of Bachelor of Science in Information Technology.</H5>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</table>
+  </div>
+</body>
+</html>

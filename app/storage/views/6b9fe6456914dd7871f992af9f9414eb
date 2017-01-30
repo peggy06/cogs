@@ -1,0 +1,29 @@
+<?php $__env->startSection('content'); ?>
+
+
+<div class="login-page">
+<h1>Forgot Password Verification</h1>
+<div class="login-page" style="background: #222;">
+<div class="container" >
+			<div class="account_grid">
+				<div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s">
+				<div class="container">
+			<div class="check-out">
+			<center>
+			<h4 class="title">Are you <?php echo $fname; ?> <?php echo $mname; ?> <?php echo $lname; ?> ?</h4>
+			<p>
+				<a href="/login" class="btn btn-warning">No</a>
+				<a href="/send_recovery" class="btn btn-primary">Yes</a>
+			</p>
+			</center>
+				</div>
+				</div>
+				</div>
+			</div>
+			</div>
+			</div>
+</div>
+<br/>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

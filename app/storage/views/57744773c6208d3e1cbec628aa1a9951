@@ -1,0 +1,10 @@
+<?php $__env->startSection('content'); ?>
+<div id="tag" class="col-1-1">
+	<div id="center-tag" class="col-1-1">
+		<div class="line col-1-1">
+			
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Backend</title>
+        <!--CSS-->
+        <!--JS-->
+    </head>
+    <body>
+		<header></header>
+         
+        <?php echo $__env->yieldContent('content'); ?>
+        
+		<footer></footer>
+    </body>
+</html>

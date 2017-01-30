@@ -1,0 +1,153 @@
+<?php $__env->startSection('content'); ?>
+
+                    <div class="panel panel-default">
+                    
+                <?php if($add==2): ?>
+                    
+                    <?php foreach($_admin as $admin): ?>
+                    
+                        <div class="panel-heading"><?php echo $page.' of Admin User : '.$admin->admin_name; ?></div>
+                        <div class="panel-body">
+                        
+                            <?php echo $form_on; ?>
+
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label>Username</label><br>
+                                        <input id="" class="form-control input-sm" placeholder="username" required="required" name="user_name" type="text" value="<?php echo $admin->admin_name; ?>">
+                                        <br>
+                                        <br>
+                                        <label>New&nbsp;Password</label><br>
+                                        <input id="" class="form-control input-sm" placeholder="password" name="user_pass" type="password">
+                                        <br>
+                                        <br>
+                                        <label>User&nbsp;Level</label><br>
+                                        <select name="user_level" class="form-control input-sm" required="required">
+                                        
+                                            <?php foreach($_admin_level as $admin_level): ?>
+                                        
+                                            <option <?php echo ($admin_level->admin_level_id==$admin->admin_level || $admin->admin_level==0?"selected":""); ?> value="<?php echo $admin_level->admin_level_id; ?>"><?php echo $admin_level->admin_level_name; ?></option>
+                                        
+                                            <?php endforeach; ?>
+                                            
+                                        </select>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label>First&nbsp;Name</label><br>
+                                            <input id="" class="form-control input-sm" placeholder="first name" required="required" name="user_fname" type="text" value="<?php echo $admin->admin_fname; ?>">
+                                            <br>
+                                            <br>
+                                            <label>Middle&nbsp;Name</label><br>
+                                            <input id="" class="form-control input-sm" placeholder="middle name" required="required" name="user_mname" type="text" value="<?php echo $admin->admin_mname; ?>">
+                                            <br>
+                                            <br>
+                                            <label>Last&nbsp;Name</label><br>
+                                            <input id="" class="form-control input-sm" placeholder="last name" required="required" name="user_lname" type="text" value="<?php echo $admin->admin_lname; ?>">
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="form-group">            
+                                        <div class="col-md-1">
+                                            
+                                            <?php echo $user_save; ?>
+                                            
+                                            <?php echo $user_hide; ?>
+                                            
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="form-group">
+                                    
+                                </div>
+                                
+                            <?php echo $form_off; ?>
+                    
+                        </div>
+                        
+                    <?php endforeach; ?>
+                    
+                <?php else: ?>
+                
+                    <div class="panel-heading"><?php echo $page; ?></div>
+                        <div class="panel-body">
+                        
+                            <?php echo $form_on; ?>
+
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label>Username</label><br>
+                                        
+                                        <?php echo $user_name; ?>
+                                        
+                                        <br>
+                                        <br>
+                                        <label>Password</label><br>
+                                        
+                                        <?php echo $user_pass; ?>
+                                        
+                                        <br>
+                                        <br>
+                                        <label>User&nbsp;Level</label>
+                                        <select name="user_level" class="form-control input-sm" required="required">
+                                        
+                                            <?php foreach($_admin_level as $admin_level): ?>
+                                        
+                                            <option <?php echo ($admin_level->admin_level_id==2?"selected":""); ?> value="<?php echo $admin_level->admin_level_id; ?>"><?php echo $admin_level->admin_level_name; ?></option>
+                                        
+                                            <?php endforeach; ?>
+                                            
+                                        </select>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label>First&nbsp;Name</label><br>
+                                        
+                                        <?php echo $user_fname; ?>
+                                        
+                                        <br>
+                                        <br>
+                                        <label>Middle&nbsp;Name</label><br>
+                                        
+                                        <?php echo $user_mname; ?>
+                                        
+                                        <br>
+                                        <br>
+                                        <label>Last&nbsp;Name</label><br>
+                                        
+                                        <?php echo $user_lname; ?>
+                                        
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <div class="col-md-1">
+                                    
+                                        <?php echo $user_save; ?>
+                                        
+                                        <?php echo $user_hide; ?>
+                                        
+                                    </div>
+                                </div>
+                                
+                            <?php echo $form_off; ?>
+                    
+                        </div>
+                
+                <?php endif; ?>
+                    
+                    </div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('backend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

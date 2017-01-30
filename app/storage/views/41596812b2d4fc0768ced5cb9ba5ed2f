@@ -1,0 +1,115 @@
+<?php $__env->startSection('content'); ?>
+
+                                        <div class="resume">
+                                            <header class="page-header">
+                                                <h1 class="page-title"><?php echo ucfirst($_SESSION['user_fname']).' '.ucfirst($_SESSION['user_lname']); ?></h1>
+                                            </header>
+                                            <!--unclosed-->
+                                            <div class="row">
+                                                <div class="col-xs-0 col-sm-0 col-md-offset-0">
+                                                    <div class="panel panel-default"> 
+                                                        <div class="bs-callout-danger" style="margin-left:10px; font-size:14px;">
+                                                            <a><b>Personal</b></a>
+                                                            |
+                                                            <a><b>Education</b></a>
+                                                            |
+                                                            <a><b>Work</b></a>
+                                                            |
+                                                            <a><b>Seminars</b></a>
+                                                            |
+                                                            <a><b>Skills</b></a> 
+                                                        </div>
+                                                        <div class="panel-heading resume-heading">
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <br>
+                                                                    <br>
+                                                                    <div class="col-xs-12 col-sm-12">
+                                                                        <ul class="list-group">
+                                                                            <li class="list-group-item">
+                                                                                <b>Username</b><input class="form-control" type="text" placeholder="Username" required="required"><br>
+                                                                                <b>Old Pasword</b><input class="form-control" type="password" placeholder="Old Password" required="required"><br>
+                                                                                <b>New Pasword</b><input class="form-control" type="password" placeholder="New Password" required="required"><br>
+                                                                            </li>
+                                                                            <li class="list-group-item">
+                                                                                <b>First Name</b><input class="form-control" type="text" placeholder="First Name" required="required"><br>
+                                                                                <b>Middle Name</b><input class="form-control" type="text" placeholder="Middle Name" required="required"><br>
+                                                                                <b>Last Name</b><input class="form-control" type="text" placeholder="Last Name" required="required"><br>
+                                                                            </li>
+                                                                            <li class="list-group-item">
+                                                                                <b>Phone</b><input class="form-control" type="number" placeholder="00-0000-0000" required="required"><br>
+                                                                                <b>Email</b><input class="form-control" type="email" placeholder="email@web.com" required="required"><br>
+                                                                            </li>
+                                                                            <li class="list-group-item">
+                                                                                <b>Gender</b>
+                                                                                <select class="form-control"><option value="1">Male</option><option value="0">Female</option></select><br>
+                                                                                <b>Birth Date</b>
+                                                                                <input class="form-control" type="date" placeholder="year/month/day" required="required"><br>
+                                                                                <b>Birth Place</b>
+                                                                                <textarea class="form-control" placeholder="Birth Place" required="required"></textarea><br>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bs-callout bs-callout-danger" style="display:none;">
+                                                            <h4>EDUCATIONAL BACKGROUND</h4>
+                                                            <table class="table table-striped table-responsive ">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Degree</th>
+                                                                        <th>Graduation Year</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Masters in Computer Science and Information Technology</td>
+                                                                        <td>2014</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Bachelor of Science in Information Technology</td>
+                                                                        <td>2011</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="bs-callout bs-callout-danger" style="display:none;">
+                                                            <h4>Job Experiences</h4>
+                                                            <ul class="list-group">
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Company Name:</b> IBM </li>
+                                                                    <li> <b>Position:</b> Jurior Programmer</li>
+                                                                    <li> <b>Date:</b> 2005</li>
+                                                                </a>
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Company Name:</b> IBM </li>
+                                                                    <li> <b>Position:</b> Jurior Programmer</li>
+                                                                    <li> <b>Date:</b> 2005</li>
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="bs-callout bs-callout-danger" style="display:none;">
+                                                            <h4>Seminars Attended</h4>
+                                                            <ul class="list-group">
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Nature:</b> SQL Server </li>
+                                                                    <li> <b>Sponsor:</b> Microsoft Community</li>
+                                                                    <li> <b>Venue:</b> Microsoft Baguio</li>
+                                                                    <li> <b>Date:</b> 2006</li>
+                                                                </a> 
+                                                                <a class="list-group-item inactive-link" href="#">
+                                                                    <li> <b>Company Name:</b> IBM </li>
+                                                                    <li> <b>Position:</b> Jurior Programmer</li>
+                                                                    <li> <b>Date:</b> 2005</li>
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="bs-callout bs-callout-danger"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

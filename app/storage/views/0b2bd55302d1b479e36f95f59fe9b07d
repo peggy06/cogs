@@ -1,0 +1,121 @@
+<?php $__env->startSection('content'); ?>
+<div id="tag" class="col-1-1">
+    <div id="center-tag" class="col-1-1">
+		<div class="line col-1-1">
+			<div class="left-line col-9-12 hr-line-thin-bottom">
+				<p id="post" class="title">
+					<span class="font-red text-shadow">Lorem ipsum</span>
+					<br />
+					<span class="subtitle text-shadow">
+						written by <span class="font-blue">angeldrb</span> on <span class="font-blue">May 25, 2013</span> with <span class="font-blue">6 comments</span>
+					</span>
+				</p>
+				<p class="paragraph">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+				</p>
+				<img src="assets/images/blogs/2134213412342134.jpg" style="width: 100%;">
+				<span class="subtitle">
+					Picture by Mr. Green
+				</span>
+				<p class="paragraph">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+				</p>
+			</div>
+			<div class="right-line col-3-12 p-left">
+				<p class="title">
+					<h2 class="font-red text-shadow">About the Author</h2>
+				</p>
+				<img class="image box-shadow m-hide" src="assets/images/profiles/profile_001.jpg">
+				<p class="statement">
+					Im Mary <b class="font-red">Angelica Bonifacio</b>, 22 years old. And I love fantasy. You can contact me through my email, <a href="mail:angeldrb@primia.ph"><b class="font-red">angeldrb@primia.ph</b></a>
+				</p>
+				<p class="title">
+					<h2 class="font-red text-shadow">More About the Authors</h2>
+					<a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+					<a href="http://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+					<a href="http://github.org" target="_blank"><i class="fa  fa-github-square fa-2x"></i></a>
+					<a href="http://google.plus.com" target="_blank"><i class="fa   fa-google-plus-square fa-2x"></i></a>
+				</p>
+			</div>
+		</div>
+		<div class="line col-1-1">
+			<div class="left-line col-9-12 hr-line-thin-bottom">
+				<p class="title">
+					<h2 class="font-red text-shadow">Comments</h2>
+				</p>
+				<div class="part col-1-1 mobile-full">
+					<div class="left-part col-2-12 t-hide">
+						<img class="image box-shadow" src="assets/images/profiles/profile_002.jpg" style="width:50%;" />
+					</div>
+					<div class="right-part col-10-12">
+						<p class="subtitle text-shadow"><span class="font-blue">azzikker</span> says: <span class="font-blue">November 24, 2013 12:00 am</span></p>
+						<p class="statement">
+							I love this "LOREM IPSUM"! Its killing me. :-D. Especially these part of line, "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+						</p>
+					</div>
+				</div>
+				<div class="part col-1-1 mobile-full">
+					<div class="left-part col-2-12 t-hide">
+						<img class="image box-shadow" src="assets/images/profiles/profile_001.jpg" style="width:50%;" />
+					</div>
+					<div class="right-part col-10-12">
+						<p class="subtitle text-shadow"><span class="font-blue">angeldrb</span> says: <span class="font-blue">November 26, 2013 7:00 am</span></p>
+						<p class="statement">
+							Really? Thanks for appreciation. I hope you enjoyed reading my articles.
+						</p>
+					</div>
+				</div>
+				<div class="part col-1-1 mobile-full">
+					<div class="left-part col-2-12 t-hide">
+						<img class="image box-shadow" src="assets/images/profiles/profile_002.jpg" style="width:50%;" />
+					</div>
+					<div class="right-part col-10-12">
+						<p class="subtitle text-shadow"><span class="font-blue">azzikker</span> says: <span class="font-blue">December 1, 2013 3:00 am</span></p>
+						<p class="statement">
+							Yah! I enjoyed it. Its really cool to read all of your articles. I can't stop reading them.
+						</p>
+					</div>
+				</div>
+				<div class="part col-1-1 mobile-full">
+					<div class="left-part col-2-12 t-hide">
+						<img class="image box-shadow" src="assets/images/profiles/profile_003.jpg" style="width:50%;" />
+					</div>
+					<div class="right-part col-10-12">
+						<p class="subtitle text-shadow"><span class="font-blue">azzikker</span> says: <span class="font-blue">December 1, 2013 3:00 am</span></p>
+						<p class="statement">
+							Nice post! Though I can't understand it, but its the best article I've ever red.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="right-line col-3-12 p-left">
+			</div>
+		</div>
+		<div class="line col-1-1">
+			<div class="left-line col-9-12">
+				<div class="part col-1-1 mobile-full">
+					<div class="left-part col-2-12">
+						<p class="title">
+							<h2 class="font-red text-shadow">Say Somthing</h2>
+						</p>
+					</div>
+					<div class="right-part col-10-12">
+						<form action="" method="post">
+							<div class="field col-1-1">
+								<label class="font-blue text-shadow" for="i_comment">Say Something here:</label><br>
+								<textarea id="i_comment" class="border-blue"></textarea><br>
+							</div>
+							<div class="field col-1-1">
+								<button class="background-blue" type="submit">Comment</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="right-line col-3-12 p-left">
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

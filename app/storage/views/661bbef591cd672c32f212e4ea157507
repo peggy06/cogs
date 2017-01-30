@@ -1,0 +1,8 @@
+<?php $__env->startSection('content'); ?>
+
+<br>
+	<?php echo $default; ?>
+<br>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

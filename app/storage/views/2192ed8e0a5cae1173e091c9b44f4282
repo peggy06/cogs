@@ -1,0 +1,89 @@
+<?php $__env->startSection('content'); ?>
+
+                                        <!-- main col left --> 
+                                        <div class="panel panel-default well"> 
+                                        
+                                            <?php echo $form_on; ?>
+                                            
+                                                Post New..
+                                                <div class="form-group" style="padding:14px;">
+                                                
+                                                    <?php echo $feed_title; ?>
+                                                    
+                                                    <br>
+                                                    
+                                                    <?php echo $feed_text; ?>
+                                                    
+                                                </div>
+                                                
+                                                <?php echo $feed_post; ?>
+                                                
+                                                <?php echo $feed_hide; ?>
+                                                
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--a href="#postModal" role="button" data-toggle="modal">
+                                                            <i class="glyphicon glyphicon-camera" id="icon-camera" ></i>
+                                                        </a-->
+                                                    </li>
+                                                    <li>
+                                                        <!--a href="">
+                                                            <i class="glyphicon glyphicon-map-marker" id="icon-location"></i>
+                                                        </a-->
+                                                    </li>
+                                                </ul>
+                                                
+                                            <?php echo $form_off; ?>
+                                            
+                                        </div>
+                                        
+                                    <?php foreach($_admin_feeds as $admin_feeds): ?>
+                                        
+                                        <div class="well post" id="well">
+                                            <div class="panel-body">
+                                                <p class="lead"><?php echo $admin_feeds->post_title; ?></p>
+                                                <h6>Posted by <?php echo ucfirst($admin_feeds->admin_lname).', '.ucfirst($admin_feeds->admin_fname).' '.ucfirst($admin_feeds->admin_mname); ?> : <?php echo date('F j, Y h:i A',$admin_feeds->post_date); ?></h6>
+                                                <p><?php echo $admin_feeds->post_txt; ?></p>
+                                            </div>
+                                            
+                                    <?php
+                                        $_admin_comment=DB::select('
+                                            SELECT
+                                                tbl_comment.comment_text
+                                                ,tbl_comment.comment_date
+                                                ,tbl_admin.admin_fname
+                                                ,tbl_admin.admin_mname
+                                                ,tbl_admin.admin_lname
+                                            FROM
+                                                tbl_post,tbl_comment,tbl_admin
+                                            WHERE (
+                                                tbl_post.post_id='.$admin_feeds->post_id.' AND 
+                                                tbl_post.post_id=tbl_comment.post_id AND 
+                                                tbl_comment.admin_id=tbl_admin.admin_id
+                                            )
+                                            GROUP BY tbl_comment.comment_id
+                                            ORDER BY tbl_comment.comment_date ASC
+                                        ');
+                                        foreach($_admin_comment as $admin_comment):      
+                                    ?>
+                                        
+                                            <div class="well comment">
+                                                <b><a><?php echo ucfirst($admin_comment->admin_lname).', '.ucfirst($admin_comment->admin_fname).' '.ucfirst($admin_comment->admin_mname); ?></a></b> <i>says..</i>
+                                                <br>
+                                                <sup>Commented last <?php echo date('F j, Y h:i A',$admin_comment->comment_date); ?></sup>
+                                                <br>
+                                                <?php echo $admin_comment->comment_text; ?>
+                                            </div>
+                                            
+                                    <?php endforeach; ?>
+                                            
+                                            <hr>
+                                            <form method="POST" action="admin/feeds/comment/<?php echo $admin_feeds->post_id; ?>" accept-charset="UTF-8" class="form-horizontal" role="form">
+                                                <input class="form-control input-sm" placeholder="say something..." name="admin_comment" type="text" autocomplete="off">
+                                            </form>
+                                        </div>
+                                        
+                                    <?php endforeach; ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
